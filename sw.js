@@ -1,5 +1,5 @@
 // Inventario Dental: guarda la app completa en el dispositivo para que abra sin internet.
-const CACHE = 'inventario-dental-v3-1';
+const CACHE = 'inventario-dental-v3-2';
 const ASSETS = [
   './',
   './index.html',
@@ -17,7 +17,7 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {
@@ -37,7 +37,7 @@ self.addEventListener('fetch', (e) => {
   // La página: primero internet (para recibir mejoras); sin conexión, la copia guardada.
   if (req.mode === 'navigate') {
     e.respondWith(
-      fetch(req)
+      fetch(req.url, { cache: 'no-cache', credentials: 'same-origin' })
         .then((res) => {
           if (res.ok) {
             const copy = res.clone();

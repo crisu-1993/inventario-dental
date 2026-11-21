@@ -1,0 +1,59 @@
+INVENTARIO DENTAL · app instalable
+==================================
+
+Esta carpeta es la app completa. Funciona sola: no usa servidores,
+bases de datos, inteligencia artificial ni servicios de terceros.
+Todo corre en el navegador del celular o del computador, se instala
+con su propio ícono y, después de abrirla una vez, funciona sin internet.
+
+
+1) PUBLICARLA (una sola vez, gratis)
+   La app necesita una dirección web (https) para poder instalarse.
+   Opción simple con GitHub Pages (gratis):
+   - Crea un repositorio nuevo y PÚBLICO en github.com (por ejemplo
+     "inventario-dental"). Público solo significa que se ve el código de la app;
+     los inventarios nunca salen de cada celular.
+   - Add file > Upload files > arrastra TODOS los archivos de esta carpeta.
+   - Commit changes.
+   - Settings > Pages > Branch: main / (root) > Save.
+   - En uno o dos minutos queda en https://TU-USUARIO.github.io/inventario-dental/
+   También sirve cualquier hosting estático: Netlify Drop (app.netlify.com/drop;
+   crea la cuenta gratis y "reclama" el sitio, si no, se borra), Cloudflare Pages
+   o el hosting de tu propio sitio web.
+   Ojo: abrir index.html con doble clic NO sirve para instalarla.
+
+
+2) INSTALARLA EN CADA CELULAR
+   iPhone: abre el enlace en Safari > botón Compartir > "Agregar a pantalla de inicio".
+   Android: abre el enlace en Chrome > menú ⋮ > "Instalar app".
+
+
+3) CÓMO SE USA
+   - Entras con tu correo y llegas a "Mis clínicas": agrega, renombra o
+     elimina clínicas. Cada clínica tiene su propio inventario.
+   - Cada inventario se arma según especialidades, importando un archivo
+     (Excel .xlsx, CSV, PDF con texto, Word .docx o pegando una lista) o desde cero.
+   - Los mínimos los decides tú: estimados según la cantidad de box o
+     escritos uno a uno.
+   - En el panel: buscador, agrupar por especialidad, por categorías
+     propias o sin agrupar, y el aviso de lo que está bajo el mínimo.
+   - "Terminé una atención": anotas lo que usaste y se descuenta del stock.
+     Si la presentación dice "caja x100", descuentas por unidad.
+   - Exporta el inventario o lo que falta a tu correo, por WhatsApp o como PDF.
+
+
+4) IMPORTANTE SOBRE LOS DATOS
+   - Todo queda guardado en el dispositivo donde se usa, asociado al correo.
+     El correo no es una contraseña: solo ordena los datos y es el
+     destinatario de los envíos.
+   - No hay sincronización entre celulares.
+   - Respaldo: en "Mis clínicas" > menú > Descargar respaldo (todas las
+     clínicas en un archivo). En otro equipo: Restaurar un respaldo.
+   - Haz un respaldo de vez en cuando: si se borran los datos del navegador
+     o se pierde el celular, el respaldo es la única copia.
+
+
+5) ACTUALIZAR LA APP
+   Sube los archivos nuevos encima de los anteriores (en GitHub: Add file >
+   Upload files, con los mismos nombres se reemplazan). Cada celular toma
+   la versión nueva la próxima vez que abra la app con internet.
